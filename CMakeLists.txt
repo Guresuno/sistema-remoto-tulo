@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Librerias de DirectX y Windows
-link_libraries(d3d11 dxgi user32)
+link_libraries(d3d11 dxgi user32 ws2_32)
 
 # Include AMF Headers
 include_directories(AMF/amf/public/include)
@@ -16,8 +16,12 @@ add_executable(TuloServer
     src/Capture.h
     src/Encoder.cpp
     src/Encoder.h
+    src/Network.cpp
+    src/Network.h
 )
 
 add_executable(TuloClient
     src/Client.cpp
+    src/Network.cpp
+    src/Network.h
 )
