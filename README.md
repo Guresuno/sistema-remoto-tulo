@@ -13,6 +13,13 @@
   TULO es un motor de transmisión en tiempo real de bajo nivel diseñado para rivalizar con soluciones comerciales como GeForce Now o Parsec, construido directamente sobre DirectX 11 y AMD Advanced Media Framework (AMF).
 </p>
 
+### 📥 Descargas Oficiales (v1.0.0)
+
+> **Instaladores automatizados incluidos. No requieren consola.**
+
+[![Descargar Servidor](https://img.shields.io/badge/Descargar-TULO_Server-red?style=for-the-badge&logo=amd)](https://github.com/Guresuno/sistema-remoto-tulo/releases/download/v1.0.0/TuloServer.zip)
+[![Descargar Cliente](https://img.shields.io/badge/Descargar-TULO_Client-blue?style=for-the-badge&logo=windows)](https://github.com/Guresuno/sistema-remoto-tulo/releases/download/v1.0.0/TuloClient.zip)
+
 </div>
 
 ---
