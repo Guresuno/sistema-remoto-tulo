@@ -32,4 +32,9 @@ add_executable(TuloClient
     src/Client.cpp
     src/Network.cpp
     src/Network.h
+    src/Decoder.cpp
+    src/Decoder.h
 )
+
+# Enlazar FFmpeg y SDL2 al Cliente
+target_link_libraries(TuloClient ws2_32 avcodec avutil swscale SDL2)
