@@ -5,10 +5,14 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Librerias de DirectX y Windows
-link_libraries(d3d11 dxgi user32 ws2_32)
+link_libraries(d3d11 dxgi user32 ws2_32 setupapi)
 
 # Include AMF Headers
 include_directories(AMF/amf/public/include)
+
+# ViGEmClient
+add_subdirectory(ViGEmClient)
+include_directories(ViGEmClient/include)
 
 add_executable(TuloServer 
     src/main.cpp
@@ -18,7 +22,11 @@ add_executable(TuloServer
     src/Encoder.h
     src/Network.cpp
     src/Network.h
+    src/InputInjector.cpp
+    src/InputInjector.h
 )
+
+target_link_libraries(TuloServer ViGEmClient)
 
 add_executable(TuloClient
     src/Client.cpp

@@ -1,6 +1,7 @@
 #include "Capture.h"
 #include "Encoder.h"
 #include "Network.h"
+#include "InputInjector.h"
 #include <iostream>
 #include <thread>
 #include <chrono>
@@ -22,6 +23,12 @@ int main() {
     if (!udpServer.Initialize()) {
         std::cerr << "Failed to init UDP Server." << std::endl;
         return -1;
+    }
+
+    InputInjector injector;
+    if (!injector.Initialize()) {
+        std::cerr << "Warning: Failed to init InputInjector. Check if ViGEmBus is installed." << std::endl;
+        // Proceed anyway so video still works
     }
 
     std::cout << "Capturing and encoding 120 frames to test pipeline..." << std::endl;
