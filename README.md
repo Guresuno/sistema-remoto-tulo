@@ -12,7 +12,8 @@
 <p align="center">
   TULO es un motor de transmisión en tiempo real creado por mi para que julio no tenga el tiempo de espera del jifors nau <br>
   TULO IS LOVE TULO IS LIFE <br>
-  swilfy es sendo pato y le gusta el yupi
+  swilfy es sendo pato y le gusta el yupi <br>
+  OPTIMIZADO PARA INTEL Y NVIDIA SECUNDARIOS
 </p>
 
 ### 📥 Descargas Oficiales (v1.0.0)
