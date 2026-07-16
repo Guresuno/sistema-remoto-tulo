@@ -26,7 +26,7 @@ add_executable(TuloServer
     src/InputInjector.h
 )
 
-target_link_libraries(TuloServer ViGEmClient)
+target_link_libraries(TuloServer ViGEmClient mfplat mf mfuuid wmcodecdspuuid)
 
 add_executable(TuloClient
     src/Client.cpp
